@@ -1,8 +1,10 @@
 package DesignPattern.singletion.lazy;
 
-public class LazyInnerClassSingleton {
+import java.io.Serializable;
 
-    private LazyInnerClassSingleton(){
+public class LazyInnerClassSingleton implements Serializable {
+
+    private LazyInnerClassSingleton() {
         //防止反射破坏单例
         if(null != InnerLazy.innerSingleton){
             throw  new RuntimeException("//防止反射破坏单例");
