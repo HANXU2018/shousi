@@ -23,6 +23,10 @@ public class LazyInnerClassSingleton implements Serializable {
     public void  test(){
         System.out.println(Thread.currentThread().getName()+" " + this.toString());
     }
+    private Object readResolve(){
+        return InnerLazy.innerSingleton;
+    }
+
     public static void main(String[] args) {
         LazyInnerClassSingleton.getInstance().test();
     }
