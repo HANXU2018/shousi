@@ -10,7 +10,7 @@ public class HungrySingleton {
         return single;
     }
 
-    private static void test(){
+    void test(){
         System.out.println("hello ");
     }
 
