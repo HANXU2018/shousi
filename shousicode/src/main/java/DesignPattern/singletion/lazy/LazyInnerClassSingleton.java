@@ -3,7 +3,10 @@ package DesignPattern.singletion.lazy;
 public class LazyInnerClassSingleton {
 
     private LazyInnerClassSingleton(){
-
+        //防止反射破坏单例
+        if(null != InnerLazy.innerSingleton){
+            throw  new RuntimeException("//防止反射破坏单例");
+        }
     }
 
     public static LazyInnerClassSingleton getInstance(){
