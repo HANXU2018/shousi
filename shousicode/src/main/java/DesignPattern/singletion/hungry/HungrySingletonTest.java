@@ -1,4 +1,4 @@
-package DesignPattern.singletion;
+package DesignPattern.singletion.hungry;
 /*
 * 饿汉式单例的优缺点
 优点：创建对象时没有加任何的锁、执行效率比较高。

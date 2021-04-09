@@ -1,4 +1,4 @@
-package DesignPattern.singletion;
+package DesignPattern.singletion.hungry;
 
 public class HungrySingleton {
     private static final HungrySingleton single = new HungrySingleton();
